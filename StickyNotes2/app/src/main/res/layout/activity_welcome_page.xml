@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#d2f4f4"
+    tools:context="com.example.nipuxo.stickynotes.welcome_page">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/welcomeText"
+        android:layout_height="200dp"
+        android:background="@drawable/mylogo"
+
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/welcomeText"
+        android:layout_alignLeft="@id/welcomeText"
+        android:layout_marginTop="20dp"
+        android:id="@+id/addBTN"
+        android:background="@drawable/add"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Notes"
+        android:textSize="30dp"
+        android:textColor="#1464dc"
+        android:id="@+id/addtext"
+        android:layout_toRightOf="@id/addBTN"
+        android:layout_alignBottom="@id/addBTN"
+        android:layout_marginLeft="5dp"/>
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/view"
+        android:id="@+id/viewBTN"
+        android:layout_alignLeft="@id/addBTN"
+        android:layout_below="@id/addBTN"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/viewText"
+        android:layout_height="wrap_content"
+        android:text="View Notes"
+        android:textColor="#1464dc"
+        android:textSize="30dp"
+        android:layout_toRightOf="@id/viewBTN"
+        android:layout_alignBottom="@id/viewBTN"
+        android:layout_marginLeft="5dp"/>
+
+</RelativeLayout>
